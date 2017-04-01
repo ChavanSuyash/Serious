@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.divesh.serious.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="378dp"
+        android:layout_height="456dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/scrollView3"
+        android:paddingRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+
+            <TextView
+                android:id="@+id/results"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="Scan Text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Results:"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_weight="16520.90"
+        android:layout_above="@+id/scrollView3"
+        android:layout_alignLeft="@+id/scrollView3"
+        android:layout_alignStart="@+id/scrollView3" />
+
+
+</RelativeLayout>
